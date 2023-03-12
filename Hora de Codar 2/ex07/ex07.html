@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        alert(`Você terá que informar seis números.`)
+
+        var num1 = parseFloat(prompt(`Escolha o número 1.`))
+
+        var num2 = parseFloat(prompt(`Escolha o número 2.`))
+
+        var num3 = parseFloat(prompt(`Escolha o número 3.`))
+
+        var num4 = parseFloat(prompt(`Escolha o número 4.`))
+
+        var num5 = parseFloat(prompt(`Escolha o número 5.`))
+
+        var num6 = parseFloat(prompt(`Escolha o número 6.`))
+
+        var array = [num1, num2, num3, num4, num5, num6]
+        var soma = 0
+
+        for(let i = 0; i < array.length; i++){
+            if( array[i] < 72){
+                soma += array[i]
+            }
+        }
+
+        console.log(`Os valores informados foram: ${num1},${num2},${num3},${num4},${num5},${num6}. A soma é igual a: ${soma}`)
+
+    </script>
+    <title>Hora de Codar 2</title>
+</head>
+<body>
+    <!--
+        Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.  
+    -->
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 2</title>
+    <script>
+        alert(`Você terá que informar quatro números.`)
+
+        var num1 = parseFloat(prompt(`Escolha o número 1.`))
+
+        var num2 = parseFloat(prompt(`Escolha o número 2.`))
+
+        var num3 = parseFloat(prompt(`Escolha o número 3.`))
+
+        var num4 = parseFloat(prompt(`Escolha o número 4.`))
+
+        var maior = 0
+
+        if (num1 > num2 && num1 > num3 && num1 > num4){
+        maior = num1
+
+        } else if(num2 > num1 && num2 > num3 && num2 > num4){
+        maior = num2
+
+        } else if(num3 > num1 && num3 > num2 && num3 > num4){
+        maior = num3
+
+        } else if(num4 > num1 && num4 > num2 && num4 > num3){
+        maior = num4
+
+        } else{
+        alert(`Os números informados não podem ser iguais, tente novamente.`)
+        }
+
+        let array = [num1, num2, num3, num4]
+
+        document.write(`O primeiro número é ${array[0]}, o último número é ${array[3]} e o número maior é ${maior}.`)
+
+    </script>
+</head>
+<body>
+</body>
+</html>
